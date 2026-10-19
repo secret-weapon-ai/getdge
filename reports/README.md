@@ -1,5 +1,7 @@
 # Reports
 
+Reports live under `/reports/<dealer>/…` and are not linked from the home page.
+
 Each audit report lives at:
 
 ```

@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Chosen Auto Group &middot; Agentic Search Audit (Preview) &middot; Oct 12, 2026</title><style>
+:root{--bg:#05090b;--panel:#0b1215;--panel2:#0e171b;--line:#1a272c;--txt:#e9f1f0;--mut:#8a9b9c;--g:#19f2a0;--g2:#0bd18a;--blue:#2f8bff;--org:#ff7a1a;--pur:#a855f7}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,"Helvetica Neue",Arial,sans-serif;font-size:14px;line-height:1.45}
+.wrap{max-width:1240px;margin:0 auto;padding:20px 24px 32px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:6px 0 18px;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:12px}
+.mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--g),#067a55);display:grid;place-items:center;font-weight:900;font-style:italic;color:#03110b;font-size:18px;letter-spacing:-1px}
+.bn{font-weight:800;font-size:16px} .bs{color:var(--mut);font-size:12px}
+.prep{text-align:right;font-size:12px;color:var(--mut)} .prep b{color:var(--txt);font-size:13px}
+.hero{position:relative;overflow:hidden;margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:38px 40px 32px;
+background:radial-gradient(700px 320px at 88% 10%,rgba(25,242,160,.18),transparent 60%),radial-gradient(500px 260px at 100% 100%,rgba(47,139,255,.10),transparent 60%),linear-gradient(180deg,#081013,#05090b)}
+.hero:before{content:"";position:absolute;right:-60px;top:40px;width:560px;height:2px;background:linear-gradient(90deg,transparent,var(--g));transform:rotate(-14deg);box-shadow:0 0 18px var(--g);opacity:.7}
+.hero:after{content:"";position:absolute;right:-40px;top:110px;width:420px;height:1px;background:linear-gradient(90deg,transparent,var(--g));transform:rotate(-14deg);opacity:.45}
+.eyebrow{letter-spacing:.32em;font-size:11px;font-weight:700;color:#b9c7c6;text-transform:uppercase}
+h1{font-size:64px;line-height:1.02;font-weight:900;font-style:italic;letter-spacing:-2px;margin:12px 0 12px;color:#19f2a0;text-shadow:0 0 40px rgba(25,242,160,.15)}
+.sub{font-size:18px;color:#d6e2e1;max-width:720px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.chip{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:999px;padding:8px 14px;font-size:13px;color:#cfdcdb}
+.chip.on{background:var(--g);color:#03110b;border-color:var(--g);font-weight:700}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--g);margin-right:7px;box-shadow:0 0 8px var(--g)}
+.chip.on .dot{background:#03110b;box-shadow:none}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px;position:relative;z-index:1}
+.kpi{background:rgba(11,18,21,.85);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.kl{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.kv{font-size:34px;font-weight:800;margin:6px 0 2px;letter-spacing:-.5px}
+.kn{font-size:12px;color:var(--mut)}
+.kpi.hl .kv{color:var(--g)}
+.sect{display:flex;align-items:center;justify-content:space-between;margin:30px 0 12px}
+h2{font-size:17px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.status{font-size:13px;color:var(--g);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.ch{display:flex;gap:14px;align-items:flex-start;margin-bottom:6px}
+.ic{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;flex:none}
+.ic svg{width:22px;height:22px}
+.ct{font-weight:800;font-size:16px} .cs{color:var(--mut);font-size:12.5px}
+.live{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--g);background:rgba(25,242,160,.1);border:1px solid rgba(25,242,160,.3);padding:3px 10px;border-radius:999px;white-space:nowrap}
+.callout{margin:14px 0 12px;padding:12px 14px;border-radius:10px;background:rgba(25,242,160,.07);border:1px solid rgba(25,242,160,.22);font-size:13.5px}
+.callout b{color:var(--g)}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.mini div{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.mini b{display:block;font-size:18px} .mini span{font-size:11.5px;color:var(--mut)}
+.row{display:flex;gap:12px;align-items:center;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);margin-top:8px}
+.row.lead{border-color:rgba(25,242,160,.55);background:linear-gradient(90deg,rgba(25,242,160,.10),rgba(25,242,160,.02));box-shadow:0 0 0 1px rgba(25,242,160,.15) inset}
+.row.ctl{border-style:dashed}
+.rank{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:12.5px;background:#16232a;color:#b9c7c6;flex:none}
+.lead .rank{background:var(--g);color:#03110b}
+.seg{flex:1;min-width:0} .sname{font-weight:700;font-size:14px} .smeta{font-size:11.5px;color:var(--mut);margin-top:1px}
+.bar{height:5px;background:#16232a;border-radius:4px;margin-top:7px;overflow:hidden} .bar span{display:block;height:100%;border-radius:4px;background:#4b6168}
+.lead .bar span{background:linear-gradient(90deg,var(--g2),var(--g))}
+.cost{text-align:right;flex:none;width:96px} .cv{font-size:20px;font-weight:800} .lead .cv{color:var(--g)}
+.cl{font-size:11px;color:var(--mut)} .life{font-size:10.5px;color:#6c7e80;margin-top:2px}
+.pill{font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:1px;text-transform:uppercase;letter-spacing:.05em}
+.pill.win{background:var(--g);color:#03110b} .pill.ctl{border:1px solid #4b6168;color:#b9c7c6}
+.foot{font-size:12px;color:var(--mut);margin-top:12px}
+.grid3{display:grid;grid-template-columns:1.15fr 1fr;gap:16px}
+.tl{list-style:none;position:relative}
+.tl li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)} .tl li:last-child{border-bottom:0}
+.tk{width:24px;height:24px;border-radius:7px;display:grid;place-items:center;flex:none;background:rgba(25,242,160,.12);color:var(--g);font-weight:900;font-size:13px}
+.tk.wait{background:rgba(255,122,26,.12);color:var(--org)}
+.tk.next{background:rgba(59,130,246,.15);color:#3b82f6} .tk.next svg{width:14px;height:14px;display:block} .td.next{color:#3b82f6;font-weight:700}
+.td{font-size:11.5px;color:var(--mut);margin-left:auto;white-space:nowrap;padding-left:10px}
+.tt{font-weight:700;font-size:13.5px} .tx{font-size:12px;color:var(--mut)}
+.px{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 4px}
+.px div{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px}
+.px b{display:block;font-size:22px} .px span{font-size:11.5px;color:var(--mut)}
+.op{display:flex;gap:12px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);margin-top:8px}
+.op .ic{width:38px;height:38px;background:#121d22;border:1px solid var(--line)}
+.op .ic svg{stroke:#cfe;width:20px;height:20px}
+.when{margin-left:auto;font-size:11px;color:var(--g);font-weight:700;white-space:nowrap;border:1px solid rgba(25,242,160,.3);border-radius:999px;padding:2px 9px}
+.strip{margin-top:22px;border:1px solid var(--line);border-radius:14px;padding:16px 22px;background:linear-gradient(90deg,rgba(25,242,160,.08),transparent 50%),var(--panel);display:flex;align-items:center;gap:22px}
+.strip .big{font-size:30px;font-weight:900;color:var(--g);font-style:italic}
+.strip .sep{width:1px;height:40px;background:var(--line)}
+.notes{margin-top:18px;font-size:11.5px;color:#738587;line-height:1.6} .notes b{color:#a7b7b8}
+@media (max-width:960px){.kpis{grid-template-columns:repeat(2,1fr)}.grid2,.grid3{grid-template-columns:1fr}h1{font-size:46px}.strip{flex-wrap:wrap}.strip .sep{display:none}}
+@media (max-width:560px){.wrap{padding:14px}.hero{padding:26px 20px}h1{font-size:36px;letter-spacing:-1px}.kpis{grid-template-columns:1fr 1fr;gap:8px}.kv{font-size:26px}.mini,.px{grid-template-columns:1fr 1fr 1fr}.prep{display:none}.cost{width:78px}}
+@page{size:1280px 2734px;margin:0}
+@media print{.kpis{grid-template-columns:repeat(4,1fr)}.grid2{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1.15fr 1fr}h1{font-size:64px}.strip{flex-wrap:nowrap}.strip .sep{display:block}.prep{display:block}}
+.k4{grid-template-columns:repeat(4,1fr);margin-top:14px}.kpi.alt{border-style:dashed;background:rgba(11,18,21,.5)}
+.aigrid{display:grid;grid-template-columns:1.1fr 1fr;gap:14px;margin-top:14px}
+.sub2{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px}
+.crow{display:grid;grid-template-columns:1fr auto;gap:2px 10px;margin-top:10px}
+.cn{font-weight:700;font-size:13px}.cc{font-weight:800;font-size:13px;text-align:right}
+.cbar{grid-column:1/-1;height:5px;background:#16232a;border-radius:4px;overflow:hidden}.cbar span{display:block;height:100%;background:linear-gradient(90deg,#7c3aed,#a855f7);border-radius:4px}
+.csub{grid-column:1/-1;font-size:11px;color:var(--mut)}
+.trend{display:block;width:100%;max-width:380px;height:auto;margin:16px auto 0}
+@media (max-width:960px){.k4{grid-template-columns:repeat(2,1fr)}.aigrid{grid-template-columns:1fr}}
+@media print{.k4{grid-template-columns:repeat(4,1fr)}.aigrid{grid-template-columns:1.1fr 1fr}}
+
+.no{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#ff6b6b;background:rgba(255,80,80,.08);border:1px solid rgba(255,90,90,.35);padding:3px 10px;border-radius:999px;white-space:nowrap}
+.no:before{content:"";width:7px;height:7px;border-radius:50%;background:#ff5a5a;box-shadow:0 0 8px #ff5a5a}
+.kpi.red .kv{color:#ff6b6b}
+.pq{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:12px}
+.pqh{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.pn{width:34px;height:34px;border-radius:9px;background:rgba(25,242,160,.12);border:1px solid rgba(25,242,160,.35);color:var(--g);font-weight:900;display:grid;place-items:center;flex:none;font-size:14px}
+.qt{font-weight:800;font-size:16.5px;line-height:1.3} .qm{font-size:12px;color:var(--mut);margin-top:3px}
+.eng{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.eh{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.en{font-weight:800;font-size:13.5px} .es{font-size:11.5px;color:var(--mut)}
+.eh .no{margin-left:auto}
+ol.dl{list-style:none;counter-reset:d}
+ol.dl li{counter-increment:d;display:flex;gap:9px;align-items:center;font-size:13px;padding:4px 0;border-bottom:1px dashed #16232a}
+ol.dl li:last-child{border-bottom:0}
+ol.dl li:before{content:counter(d);width:20px;height:20px;border-radius:50%;background:#16232a;color:#b9c7c6;font-size:11px;font-weight:800;display:grid;place-items:center;flex:none}
+.more{font-size:11.5px;color:var(--mut);margin-top:6px}
+.srcl{font-size:11.5px;color:var(--mut);margin-top:8px;padding-top:8px;border-top:1px solid var(--line)} .srcl b{color:#a7b7b8;font-weight:600}
+.mpk{font-size:11.5px;color:var(--mut);margin-top:4px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.tag{font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:999px;border:1px solid var(--line);color:#b9c7c6}
+.tag.a{border-color:rgba(47,139,255,.45);color:#8fbfff}
+.tag.g{border-color:rgba(25,242,160,.4);color:#7ff5c6}
+.cnt{text-align:right;flex:none;width:86px} .cnt .cv{font-size:22px}
+.bar span.ga{display:inline-block;height:100%;background:linear-gradient(90deg,var(--g2),var(--g))}
+.bar span.aa{display:inline-block;height:100%;background:var(--blue)}
+.bar{display:flex}
+.legend{display:flex;gap:16px;font-size:11.5px;color:var(--mut)} .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.lock{position:relative;overflow:hidden;margin-top:12px;border:1px dashed rgba(25,242,160,.45);border-radius:14px;padding:26px 26px;background:radial-gradient(500px 220px at 90% 0%,rgba(25,242,160,.12),transparent 60%),var(--panel)}
+.lockrows{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+.lockrows div{height:30px;border-radius:8px;background:repeating-linear-gradient(90deg,#122027 0 60%,#0e171b 60% 100%);border:1px solid var(--line);opacity:.8;display:flex;align-items:center;padding:0 10px;font-size:11px;color:#4b6168;font-weight:700}
+.lic{width:46px;height:46px;border-radius:12px;background:var(--g);display:grid;place-items:center;flex:none;box-shadow:0 0 24px rgba(25,242,160,.35)}
+.lic svg{width:24px;height:24px;stroke:#03110b}
+.oppn{font-size:30px;font-weight:900;font-style:italic;color:var(--g);line-height:1;flex:none;width:40px}
+.opc{display:flex;gap:14px;align-items:flex-start}
+.opc .tt{font-size:15px;margin-bottom:4px} .opc .tx{font-size:13px;line-height:1.5;color:#b5c4c3}
+.why{font-size:12px;color:var(--mut);margin-top:8px;padding-top:8px;border-top:1px solid var(--line)} .why b{color:#cfdcdb}
+.meth{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.meth div{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12px;color:var(--mut)} .meth b{display:block;color:var(--txt);font-size:13px;margin-bottom:2px}
+@media (max-width:960px){.lockrows,.meth{grid-template-columns:1fr 1fr}}
+@page{size:1280px 5055px;margin:0}
+h1{color:#19f2a0 !important;-webkit-text-fill-color:#19f2a0 !important;background:none !important;text-shadow:none !important}
+@media print{.lockrows,.meth{grid-template-columns:repeat(4,1fr)}}
+</style></head><body><div class="wrap">
+<header class="top"><div class="logo"><div class="mark">CA</div><div><div class="bn">Chosen Auto Group</div><div class="bs">Chosen Auto Sales &middot; chosenautolv.com &middot; Las Vegas, NV</div></div></div>
+<div class="prep">Prepared by <b>Secret Weapon</b><br>secret-weapon.ai &middot; Oct 12, 2026</div></header>
+<section class="hero"><div class="eyebrow">Agentic Search Audit &middot; Preview Report</div>
+<h1>Invisible to AI.</h1>
+<p class="sub">We asked ChatGPT and Google&rsquo;s AI the questions Las Vegas car shoppers actually ask. Across the first 5 questions, the AI recommended 29 different local dealers&nbsp;&mdash; and Chosen Auto wasn&rsquo;t one of them.</p>
+<div class="chips"><span class="chip on"><span class="dot"></span>Run Oct 12, 2026</span><span class="chip"><span class="dot"></span>Preview: prompts 1&ndash;5 of 25</span><span class="chip">ChatGPT + Google AI Overviews</span><span class="chip">Logged out &middot; clean searches</span></div>
+<div class="kpis">
+<div class="kpi red"><div class="kl">ChatGPT answers</div><div class="kv">0 of 5</div><div class="kn">mentioned Chosen Auto</div></div>
+<div class="kpi red"><div class="kl">Google AI Overviews</div><div class="kv">0 of 5</div><div class="kn">mentioned Chosen Auto</div></div>
+<div class="kpi red"><div class="kl">Google map pack &amp; page 1</div><div class="kv">0 of 5</div><div class="kn">searches showed Chosen Auto</div></div>
+<div class="kpi hl"><div class="kl">Competitors recommended</div><div class="kv">29</div><div class="kn">different dealers named across the 10 AI answers</div></div>
+</div></section>
+
+<div class="strip"><div class="big">0 / 10</div><div><b>AI answers that recommended Chosen Auto</b><div class="tx">5 ChatGPT answers + 5 Google AI Overviews, prompts 1&ndash;5</div></div><div class="sep"></div>
+<div class="tx" style="flex:1">When a shopper asks an AI assistant where to buy a used car in Las Vegas, it hands them a short list. Today, Chosen Auto isn&rsquo;t on it&nbsp;&mdash; in ChatGPT, in Google&rsquo;s AI Overview, or in Google&rsquo;s map pack and first page of results for these searches.</div></div>
+
+<div class="sect"><h2>Prompt-by-prompt results</h2><span class="status" style="color:#ff6b6b">Chosen visible: 0 of 10</span></div>
+
+<div class="pq"><div class="pqh"><div class="pn">1</div><div><div class="qt">&ldquo;What are the best used car dealerships in Las Vegas?&rdquo;</div><div class="qm">Google map pack: AutoSavvy, Hot Deals Auto, Ariana Motors &middot; Chosen not in map pack or page-1 organic results</div></div></div>
+<div class="grid2"><div class="eng"><div class="eh"><div><div class="en">ChatGPT</div><div class="es">Web search on &middot; dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Boktor Motors</li><li>23 Auto Group</li><li>Hot Deals Auto LLC</li><li>Subaru of Las Vegas</li><li>Findlay Volkswagen Henderson</li></ol><div class="more">Also named: Enterprise Car Sales (Henderson), Findlay Acura</div><div class="srcl"><b>Sources it cited:</b> CarEdge, Google, Yelp</div></div>
+<div class="eng"><div class="eh"><div><div class="en">Google AI Overview</div><div class="es">Dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>EchoPark Henderson</li><li>AutoNation USA / Honda East</li><li>Subaru of Las Vegas</li><li>Findlay Toyota / VW Henderson</li><li>Newport Motors</li></ol><div class="more">Also named: Queen Motorcars, Baja Auto Sales</div><div class="srcl"><b>Sources it cited:</b> EchoPark, AutoNation, CarEdge, Newport Motors</div></div></div></div>
+<div class="pq"><div class="pqh"><div class="pn">2</div><div><div class="qt">&ldquo;Where can I buy a used car in Las Vegas with bad credit?&rdquo;</div><div class="qm">Google map pack: Baja Auto Sales, Automax, Charlie Cheap Car &middot; Chosen not in map pack or page-1 organic results</div></div></div>
+<div class="grid2"><div class="eng"><div class="eh"><div><div class="en">ChatGPT</div><div class="es">Web search on &middot; dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Baja Auto Sales East</li><li>DriveTime Used Cars</li><li>Smart Auto</li><li>23 Auto Group</li></ol><div class="srcl"><b>Sources it cited:</b> Baja Auto Sales, Autotrader</div></div>
+<div class="eng"><div class="eh"><div><div class="en">Google AI Overview</div><div class="es">Dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>DriveTime</li><li>Charlie Cheap Car</li><li>Baja Auto Sales</li><li>Queen Motorcars</li><li>Automax</li></ol><div class="more">Also named: Team Ford Las Vegas, Sahara Chrysler Dodge Jeep Ram</div><div class="srcl"><b>Sources it cited:</b> Newport Motors, Baja Auto Sales, Planet Nissan</div></div></div></div>
+<div class="pq"><div class="pqh"><div class="pn">3</div><div><div class="qt">&ldquo;Which Las Vegas car lots offer buy here pay here financing?&rdquo;</div><div class="qm">Google map pack: Charlie Cheap Car, Baja Auto Sales, Cash Or Payments &middot; Chosen not in map pack or page-1 organic results</div></div></div>
+<div class="grid2"><div class="eng"><div class="eh"><div><div class="en">ChatGPT</div><div class="es">Web search on &middot; dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Baja Auto Sales East &amp; West</li><li>Automax of Las Vegas</li><li>DriveTime</li><li>The Car Company</li><li>Byrider Las Vegas</li></ol><div class="more">Also named: Auto Mart, Desert Import Auto, Cash or Payments Auto Sales, Smart Auto</div><div class="srcl"><b>Sources it cited:</b> SecondChanceInfo, BuyHerePayHere.io, DriveTime, 5-Star Rated</div></div>
+<div class="eng"><div class="eh"><div><div class="en">Google AI Overview</div><div class="es">Dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Baja Auto Sales</li><li>DriveTime</li><li>Automax</li><li>Newport Motors</li><li>CarHop</li></ol><div class="more">Also named: Charlie Cheap Car, Car Pros Auto Center</div><div class="srcl"><b>Sources it cited:</b> Baja Auto Sales, Automax, Newport Motors</div></div></div></div>
+<div class="pq"><div class="pqh"><div class="pn">4</div><div><div class="qt">&ldquo;Where can I get a used SUV for my family in Las Vegas for under $20,000?&rdquo;</div><div class="qm">Google map pack: Hot Deals Auto, Desert Auto Sales, Charlie Cheap Car &middot; Chosen not in map pack or page-1 organic results</div></div></div>
+<div class="grid2"><div class="eng"><div class="eh"><div><div class="en">ChatGPT</div><div class="es">Web search on &middot; dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Enterprise Car Sales (Sky Pointe &amp; Henderson)</li><li>EchoPark Automotive Las Vegas</li><li>AutoNation USA Centennial</li><li>Hot Deals Auto LLC</li><li>Findlay Honda (listings)</li></ol><div class="srcl"><b>Sources it cited:</b> EchoPark, Cars.com</div></div>
+<div class="eng"><div class="eh"><div><div class="en">Google AI Overview</div><div class="es">Dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Hertz Car Sales Las Vegas</li><li>AutoSavvy</li><li>AutoNation Buick GMC W. Sahara</li><li>EchoPark</li><li>Findlay Honda</li></ol><div class="srcl"><b>Sources it cited:</b> Hertz Car Sales, AutoNation Buick GMC</div></div></div></div>
+<div class="pq"><div class="pqh"><div class="pn">5</div><div><div class="qt">&ldquo;What&#x27;s the most trustworthy used car dealer in Las Vegas, NV?&rdquo;</div><div class="qm">Google map pack: Ariana Motors, Hot Deals Auto, Auto Vision &middot; Chosen not in map pack or page-1 organic results</div></div></div>
+<div class="grid2"><div class="eng"><div class="eh"><div><div class="en">ChatGPT</div><div class="es">Web search on &middot; dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Enterprise Car Sales</li><li>David Wilson&rsquo;s Toyota of Las Vegas</li><li>Boktor Motors</li><li>Subaru of Las Vegas</li></ol><div class="srcl"><b>Sources it cited:</b> CarEdge, BBB, consumer.ftc.gov</div></div>
+<div class="eng"><div class="eh"><div><div class="en">Google AI Overview</div><div class="es">Dealers in order</div></div><span class="no">Chosen: No</span></div><ol class="dl"><li>Subaru of Las Vegas</li><li>Gaudin Ford</li><li>Findlay VW Henderson</li><li>Toyota of Las Vegas</li><li>EchoPark</li></ol><div class="more">Also named: CarMax Henderson, Baja Auto Sales</div><div class="srcl"><b>Sources it cited:</b> CarEdge, Reddit r/vegaslocals, Yelp, Baja Auto Sales</div></div></div></div>
+<div class="sect"><h2>Full report: 20 more prompts</h2><span class="status">Locked</span></div>
+<div class="lock"><div class="opc"><div class="lic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+<div><div class="tt" style="font-size:18px">Prompts 6&ndash;25 are in the full audit</div><div class="tx">The full report covers 25 real shopper questions: financing and credit situations, budgets, vehicle types, nearby areas, and trust and reviews. Each comes with the same engine-by-engine visibility check, the competitors named, and the sources the AI relied on. It unlocks with your first payment.</div></div></div>
+<div class="lockrows"><div>Prompt 6 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 7 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 8 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 9 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 10 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 11 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 12 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 13 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 14 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 15 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 16 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 17 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 18 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 19 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 20 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 21 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 22 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 23 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 24 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div><div>Prompt 25 &middot; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</div></div></div>
+<div class="sect"><h2>Who the AI recommends instead</h2><div class="legend"><span><i style="background:var(--g)"></i>ChatGPT</span><span><i style="background:var(--blue)"></i>Google AI Overview</span></div></div>
+<div class="card"><div class="cs" style="margin-bottom:6px">Times each dealer was named across the 10 AI answers (5 ChatGPT + 5 Google AI Overviews, prompts 1&ndash;5). A dealer counts once per answer, even if several of its locations were listed.</div>
+<div class="row lead"><div class="rank">1</div><div class="seg"><div class="sname">Baja Auto Sales <span class="pill win">Most named</span></div><div class="smeta">ChatGPT: P2, P3 &middot; Google AIO: P1, P2, P3, P5 &middot; East and West locations</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:40.0%"></span></div></div><div class="cnt"><div class="cv">6</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">2</div><div class="seg"><div class="sname">Findlay (dealer group)</div><div class="smeta">ChatGPT: P1, P4 &middot; Google AIO: P1, P4, P5 &middot; Findlay VW Henderson, Acura, Honda, Toyota</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:30.0%"></span></div></div><div class="cnt"><div class="cv">5</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">3</div><div class="seg"><div class="sname">EchoPark</div><div class="smeta">ChatGPT: P4 &middot; Google AIO: P1, P4, P5</div><div class="bar"><span class="ga" style="width:10.0%"></span><span class="aa" style="width:30.0%"></span></div></div><div class="cnt"><div class="cv">4</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">4</div><div class="seg"><div class="sname">DriveTime</div><div class="smeta">ChatGPT: P2, P3 &middot; Google AIO: P2, P3</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:20.0%"></span></div></div><div class="cnt"><div class="cv">4</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">5</div><div class="seg"><div class="sname">Subaru of Las Vegas</div><div class="smeta">ChatGPT: P1, P5 &middot; Google AIO: P1, P5</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:20.0%"></span></div></div><div class="cnt"><div class="cv">4</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">6</div><div class="seg"><div class="sname">AutoNation (dealer group)</div><div class="smeta">ChatGPT: P4 &middot; Google AIO: P1, P4 &middot; AutoNation USA Centennial, USA/Honda East, Buick GMC W. Sahara</div><div class="bar"><span class="ga" style="width:10.0%"></span><span class="aa" style="width:20.0%"></span></div></div><div class="cnt"><div class="cv">3</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">7</div><div class="seg"><div class="sname">Automax</div><div class="smeta">ChatGPT: P3 &middot; Google AIO: P2, P3</div><div class="bar"><span class="ga" style="width:10.0%"></span><span class="aa" style="width:20.0%"></span></div></div><div class="cnt"><div class="cv">3</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">8</div><div class="seg"><div class="sname">Enterprise Car Sales</div><div class="smeta">ChatGPT: P1, P4, P5 &middot; Sky Pointe and Henderson locations</div><div class="bar"><span class="ga" style="width:30.0%"></span><span class="aa" style="width:0.0%"></span></div></div><div class="cnt"><div class="cv">3</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">9</div><div class="seg"><div class="sname">Charlie Cheap Car</div><div class="smeta">Google AIO: P2, P3</div><div class="bar"><span class="ga" style="width:0.0%"></span><span class="aa" style="width:20.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">10</div><div class="seg"><div class="sname">Newport Motors</div><div class="smeta">Google AIO: P1, P3</div><div class="bar"><span class="ga" style="width:0.0%"></span><span class="aa" style="width:20.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">11</div><div class="seg"><div class="sname">Queen Motorcars</div><div class="smeta">Google AIO: P1, P2</div><div class="bar"><span class="ga" style="width:0.0%"></span><span class="aa" style="width:20.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">12</div><div class="seg"><div class="sname">Toyota of Las Vegas</div><div class="smeta">ChatGPT: P5 &middot; Google AIO: P5 &middot; David Wilson&rsquo;s Toyota of Las Vegas</div><div class="bar"><span class="ga" style="width:10.0%"></span><span class="aa" style="width:10.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">13</div><div class="seg"><div class="sname">23 Auto Group</div><div class="smeta">ChatGPT: P1, P2</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:0.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">14</div><div class="seg"><div class="sname">Boktor Motors</div><div class="smeta">ChatGPT: P1, P5</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:0.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">15</div><div class="seg"><div class="sname">Hot Deals Auto</div><div class="smeta">ChatGPT: P1, P4</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:0.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row"><div class="rank">16</div><div class="seg"><div class="sname">Smart Auto</div><div class="smeta">ChatGPT: P2, P3</div><div class="bar"><span class="ga" style="width:20.0%"></span><span class="aa" style="width:0.0%"></span></div></div><div class="cnt"><div class="cv">2</div><div class="cl">of 10 answers</div></div></div>
+<div class="row ctl"><div class="rank" style="background:rgba(255,80,80,.12);color:#ff6b6b">&ndash;</div><div class="seg"><div class="sname">Chosen Auto Sales</div><div class="smeta">Not named in any answer, map pack, or page-1 result</div></div><div class="cnt"><div class="cv" style="color:#ff6b6b">0</div><div class="cl">of 10 answers</div></div></div>
+<div class="foot"><b style="color:#cfdcdb">Named once each:</b> AutoSavvy, Car Pros Auto Center, CarHop, CarMax, Gaudin Ford, Hertz Car Sales, Sahara CDJR, Team Ford, Auto Mart, Byrider, Cash or Payments Auto Sales, Desert Import Auto, The Car Company.</div>
+<div class="foot"><b style="color:#cfdcdb">Google map pack holders (5 searches):</b> Charlie Cheap Car (3), Hot Deals Auto (3), Ariana Motors (2), Baja Auto Sales (2), Auto Vision (1), AutoSavvy (1), Automax (1), Cash Or Payments (1), Desert Auto Sales (1).</div></div>
+<div class="sect"><h2>How we tested</h2></div><div class="card"><div class="meth">
+<div><b>Engines tested</b>ChatGPT and Google AI Overviews (plus Google&rsquo;s map pack and page-1 results)</div>
+<div><b>Clean searches</b>Logged out, a new chat for every prompt, and no mention of Chosen Auto in any question</div>
+<div><b>Local &amp; live</b>Las Vegas named in every prompt; ChatGPT web search turned on</div>
+<div><b>Run date</b>October 12, 2026 &middot; prompts 1&ndash;5 of 25 shown in this preview</div></div>
+<div class="foot">Perplexity and Claude require sign-in to answer, so they weren&rsquo;t included in this preview. For Google, the full page-1 text was checked for &ldquo;Chosen.&rdquo; Dealer lists appear in the order each engine gave them; the per-prompt view shows the top 5, with any others listed below. &ldquo;Findlay&rdquo; and &ldquo;AutoNation&rdquo; are counted as one dealer group each; &ldquo;Toyota of Las Vegas&rdquo; includes David Wilson&rsquo;s Toyota of Las Vegas.</div></div>
+
+<div class="strip"><div class="big">25</div><div><b>prompts in the full Agentic Search Audit</b><div class="tx">This preview shows the first 5</div></div><div class="sep"></div>
+<div class="tx" style="flex:1">The full report unlocks all 25 prompts with engine-by-engine results, competitor rankings and the sources behind each answer.</div><div class="tx" style="text-align:right">Secret Weapon<br>secret-weapon.ai</div></div>
+<div class="notes"><b>Data sources:</b> Secret Weapon manual audit of ChatGPT (logged out, web search on) and Google Search (logged out: AI Overview, map pack, organic page 1), run Oct 12, 2026. Results reflect what each engine showed at the time of testing and may vary by user, location and time.</div>
+</div></body></html>
